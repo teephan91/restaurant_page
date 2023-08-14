@@ -21,7 +21,6 @@ export default function createContactPage() {
         mainBlock.appendChild(subHeader);
         mainBlock.appendChild(info);
         mainBody.appendChild(mainBlock);
-        
     }
 
     mainContent.appendChild(mainHeader);
