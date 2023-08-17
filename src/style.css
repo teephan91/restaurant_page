@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+:root {
+    /* --font-color: #eee;
+    --font-color-dark: #aaa; */
+    --border-color: #b62626;
+    --background-light: rgba(245, 245, 245, 0.5);
+    /* --background-light-hover: rgba(99, 99, 99, 0.4);
+    --background-dark: rgba(0, 0, 0, 0.9); */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#nav_bar {
+    background-color: var(--background-light);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.nav_btn {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.underlined_btn {
+    border-bottom: 3px solid var(--border-color);
+}
