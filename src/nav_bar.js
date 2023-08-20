@@ -3,8 +3,10 @@ import createContactPage from './contact_page';
 import createMenuPage from './menu_page';
 
 export default function createNavBar() {
-    const navBar = document.getElementById('nav_bar');
-    const primaryContent = document.getElementById('content');
+    const mainContainer = document.getElementById('container');
+
+    const navBar = document.createElement('div');
+    navBar.setAttribute('id', 'nav_bar');
 
     const homeBtn = document.createElement('button');
     homeBtn.setAttribute('id', 'home');
@@ -18,9 +20,14 @@ export default function createNavBar() {
     contactBtn.setAttribute('id', 'contact');
     contactBtn.textContent = 'Contact';
 
+    const primaryContent = document.createElement('div');
+
     navBar.appendChild(homeBtn);
     navBar.appendChild(menuBtn);
     navBar.appendChild(contactBtn);
+    mainContainer.appendChild(navBar);
+    mainContainer.appendChild(primaryContent);
+    
     primaryContent.appendChild(createMainPage());
     homeBtn.classList.add('underlined_btn');
 
