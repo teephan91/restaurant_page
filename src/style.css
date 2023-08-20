@@ -18,6 +18,11 @@
   margin: 0;
 }
 
+body {
+    background-image: url('./background_img.jpg');
+    background-size: cover;
+}
+
 #nav_bar {
     background-color: var(--background-light);
     text-align: center;
