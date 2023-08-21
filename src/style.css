@@ -2,9 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 :root {
+    --font-light: #f5f5f5;
+    --font-dark: #404040;
     --border-color: #b62626;
     --background-light: rgba(245, 245, 245, 0.8);
     --background-medium: rgba(237, 174, 64, 0.9);
+    --background-dark: rgba(64, 64, 64, 0.6);
     height: 100%;
 }
 
@@ -39,6 +42,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 700;
+    color: var(--font-dark);
     background-color: transparent;
     width: 150px;
     height: 50px;
@@ -49,9 +53,39 @@ body {
     border-bottom: 3px solid var(--border-color);
 }
 
+#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background-dark);
+}
+
+h1,
+h2 {
+    font-family: 'Russo One', sans-serif;
+    color: var(--font-light);
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: var(--font-light);
+}
+
 footer {
     background-color: var(--background-medium);
-    color: black;
+    
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -59,6 +93,12 @@ footer {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     padding: 10px 0;
+}
+
+footer p {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .github:hover {

@@ -21,6 +21,7 @@ export default function createNavBar() {
     contactBtn.textContent = 'Contact';
 
     const primaryContent = document.createElement('div');
+    primaryContent.setAttribute('id', 'content');
 
     navBar.appendChild(homeBtn);
     navBar.appendChild(menuBtn);
