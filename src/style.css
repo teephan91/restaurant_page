@@ -62,6 +62,11 @@ body {
     background-color: var(--background-dark);
 }
 
+#logo {
+    width: 700px;
+    height: auto;
+}
+
 h1,
 h2 {
     font-family: 'Russo One', sans-serif;
@@ -85,7 +90,6 @@ p {
 
 footer {
     background-color: var(--background-medium);
-    
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -103,4 +107,49 @@ footer p {
 
 .github:hover {
     transform: scale(1.2);
+}
+
+@media only screen and (max-width: 488px) {
+    .nav_btn {
+        font-size: 15px;
+        width: 100px;
+    } 
+
+    #logo {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    #logo {
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }

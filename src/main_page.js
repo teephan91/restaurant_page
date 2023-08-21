@@ -5,8 +5,8 @@ export default function createMainPage() {
     
     const  mainLogo = new Image();
     mainLogo.src = siteLogo;
-    mainLogo.style.width = '700px';
-    mainLogo.style.height = 'auto';
+    mainLogo.setAttribute('id', 'logo');
+
 
     const mainTagline = document.createElement('p');
     mainTagline.textContent = "Exceptional Vietnamese Street Food";
