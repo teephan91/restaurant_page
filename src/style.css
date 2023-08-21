@@ -2,12 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 :root {
-    /* --font-color: #eee;
-    --font-color-dark: #aaa; */
     --border-color: #b62626;
     --background-light: rgba(245, 245, 245, 0.8);
-    /* --background-light-hover: rgba(99, 99, 99, 0.4);
-    --background-dark: rgba(0, 0, 0, 0.9); */
+    --background-medium: rgba(237, 174, 64, 0.9);
+    height: 100%;
 }
 
 *,
@@ -19,14 +17,22 @@
 }
 
 body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#container {
     background-image: url('./background_img.jpg');
     background-size: cover;
+    padding-top: 20px;
+    height: 100%;
 }
 
 #nav_bar {
     background-color: var(--background-light);
     text-align: center;
-    margin-top: 15px;
 }
 
 .nav_btn {
@@ -44,12 +50,15 @@ body {
 }
 
 footer {
+    background-color: var(--background-medium);
+    color: black;
     display: flex;
     gap: 10px;
+    justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .github:hover {
