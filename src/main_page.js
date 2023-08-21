@@ -1,8 +1,12 @@
+import siteLogo from './logo.png';
+
 export default function createMainPage() {
     const mainContent = document.createElement('div');
     
-    const mainHeader = document.createElement('h1');
-    mainHeader.textContent = "Lunch Lady";
+    const  mainLogo = new Image();
+    mainLogo.src = siteLogo;
+    mainLogo.style.width = '700px';
+    mainLogo.style.height = 'auto';
 
     const mainTagline = document.createElement('p');
     mainTagline.textContent = "Exceptional Vietnamese Street Food";
@@ -10,7 +14,7 @@ export default function createMainPage() {
     const mainPara = document.createElement('p');
     mainPara.textContent = "Est. 1995 - Saigon, Vietnam";
 
-    mainContent.appendChild(mainHeader);
+    mainContent.appendChild(mainLogo);
     mainContent.appendChild(mainTagline);
     mainContent.appendChild(mainPara);
 
